@@ -12,4 +12,8 @@ public class Telegramm implements Messenger{
     public void getMessage() {
         System.out.println("Telegramm messenger get message!");
     }
+
+    public void telegrammGreeting(){
+        System.out.println("Hello! This is Telegramm!!!!");
+    }
 }
