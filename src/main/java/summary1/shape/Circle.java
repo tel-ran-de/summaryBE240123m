@@ -13,4 +13,11 @@ public class Circle extends Shape{
     double calculateArea() {
         return 3.14 * radius * radius;
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }
 }
