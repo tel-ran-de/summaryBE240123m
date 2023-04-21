@@ -5,11 +5,11 @@ public class Viber implements Messenger{
 
     @Override
     public void sendMessage() {
-        System.out.println("Telegramm messenger send message!");
+        System.out.println("Viber messenger send message!");
     }
 
     @Override
     public void getMessage() {
-        System.out.println("Telegramm messenger get message!");
+        System.out.println("Viber messenger get message!");
     }
 }
