@@ -21,6 +21,7 @@ public class MessangerDemo {
         Telegramm telegramm2 = (Telegramm) messengers[0];
         System.out.println(telegramm2);
 
+
         for (int i = 0; i < messengers.length; i++) {
             messengers[i].getMessage();
         }
