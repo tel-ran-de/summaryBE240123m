@@ -15,11 +15,13 @@ class ShoppingListApplication {
 
         AddProduct addProduct = new AddProduct(service);
         GetAllProducts getAllProducts = new GetAllProducts(service);
+        DeleteProduct deleteProduct = new DeleteProduct(service);
         ExitMenuCommand exitMenuCommand = new ExitMenuCommand();
 
         MenuCommand[] menuCommands = {
                 addProduct,
                 getAllProducts,
+                deleteProduct,
                 exitMenuCommand
         };
 
