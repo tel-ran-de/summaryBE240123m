@@ -1,4 +1,4 @@
-package summary2;
+package summary2.cloneExample;
 
 public class Author {
     private String name;

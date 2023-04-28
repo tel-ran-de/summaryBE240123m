@@ -1,4 +1,4 @@
-package summary2;
+package summary2.cloneExample;
 
 public class BookService {
     public Book bookDuplicate(Book ourBook){

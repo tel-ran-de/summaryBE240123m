@@ -1,4 +1,4 @@
-package summary2;
+package summary2.cloneExample;
 
 public class Book {
     private String name;
@@ -21,9 +21,9 @@ public class Book {
     public Book ourCloneMethod(){
         Book book = new Book();
 
-        book.setName(name);
+        book.setName(this.name);
 
-        book.setAuthor(new Author(author.getName()));
+        book.setAuthor(new Author(this.author.getName()));
 
         return book;
     }

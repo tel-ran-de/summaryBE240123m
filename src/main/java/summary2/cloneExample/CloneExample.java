@@ -1,4 +1,4 @@
-package summary2;
+package summary2.cloneExample;
 
 public class CloneExample {
     public static void main(String[] args) {
