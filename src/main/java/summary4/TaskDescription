@@ -1,0 +1,14 @@
+Дана база данных MySQl
+
+В ней есть набор таблиц
+
+Одна из них описывает список студентов
+
+table Students
+
+в ней следующие поля:
+
+id, firstName, lastName, YearBD, group, course, avdGrade
+
+Еще есть таблицы:
+Group - список всех групп

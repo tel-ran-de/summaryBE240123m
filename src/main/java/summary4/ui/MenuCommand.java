@@ -1,8 +1,9 @@
-package summary2.shoppinglist.ui;
+package summary4.ui;
 
 public interface MenuCommand {
 
     void executeCommand();
 
     String getMenuName();
+
 }

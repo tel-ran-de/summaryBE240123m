@@ -1,9 +1,9 @@
-package summary2.shoppinglist.ui;
+package summary4.ui;
 
-public class ExitMenuCommand implements MenuCommand {
+public class ExitMenuCommand implements MenuCommand{
     @Override
     public void executeCommand() {
-        System.out.println("Bye-bye");
+        System.out.println("Bye-bye!");
         System.exit(0);
     }
 
