@@ -4,6 +4,7 @@ import summary4.domain.Groups;
 import summary4.domain.Student;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class StudentDBImpl implements StudentsDB {
@@ -13,12 +14,12 @@ public class StudentDBImpl implements StudentsDB {
 
     @Override
     public void add(Student newStudent) {
-
+        database.add(newStudent);
     }
 
     @Override
     public List<Student> getAllStudents() {
-        return null;
+        return database;
     }
 
     @Override
@@ -27,12 +28,29 @@ public class StudentDBImpl implements StudentsDB {
     }
 
     @Override
-    public Student getStudentByName(String name) {
-        return null;
+    public List<Student> getStudentByName(String lastName) {
+
+        List<Student> studentsByName = new LinkedList<>();
+
+        for (Student student : database) {
+            if (student.getLastName().equals(lastName)){
+                studentsByName.add(student);
+            }
+        }
+
+        return studentsByName;
     }
 
     @Override
-    public List<Student> getStudentsByGroup(Groups group) {
-        return null;
+    public List<Student> getStudentsByGroup(String group) {
+
+        List<Student> studentsByGroup = new ArrayList<>();
+
+        for (int i = 0; i < database.size(); i++) {
+            if (database.get(i).getGroup().equals(group)) {
+                studentsByGroup.add(database.get(i));
+            }
+        }
+        return studentsByGroup;
     }
 }

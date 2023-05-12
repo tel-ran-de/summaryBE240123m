@@ -7,11 +7,11 @@ public class Student {
     private String firstName;
     private String lastName;
     private int YearBD;
-    private int group;
+    private String group;
     private int course;
     private double avdGrade;
 
-    public Student(int id, String firstName, String lastName, int yearBD, int group, int course, double avdGrade) {
+    public Student(int id, String firstName, String lastName, int yearBD, String group, int course, double avdGrade) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -37,7 +37,7 @@ public class Student {
         return YearBD;
     }
 
-    public int getGroup() {
+    public String getGroup() {
         return group;
     }
 

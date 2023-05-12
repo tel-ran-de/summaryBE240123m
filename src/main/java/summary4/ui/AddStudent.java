@@ -22,13 +22,13 @@ public class AddStudent implements  MenuCommand{
         String firstName = scannerString("Please enter student firstname");
         String lastName = scannerString("Please enter student secondname");
         int yearBD = Integer.parseInt(scannerString("Please enter student year"));
-        int group = Integer.parseInt(scannerString("Please enter student group"));
+        String group = scannerString("Please enter student group");
         int course = Integer.parseInt(scannerString("Please enter student course"));
         double avdGrade = Double.parseDouble(scannerString("Please enter student average grade"));
 
         Student newStudent = new Student(id,firstName,lastName,yearBD,group,course,avdGrade);
 
-
+        service.addStudent(newStudent);
 
     }
 

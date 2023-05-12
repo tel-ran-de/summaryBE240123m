@@ -11,7 +11,7 @@ public interface StudentsDB {
     List<Student> getAllStudents();
     void delete(Student student);
 
-    Student getStudentByName(String name);
-    List<Student> getStudentsByGroup(Groups group);
+    List<Student> getStudentByName(String name);
+    List<Student> getStudentsByGroup(String group);
 
 }
