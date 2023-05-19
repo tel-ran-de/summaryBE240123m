@@ -1,4 +1,4 @@
-package summary5;
+package summary5.iterator;
 
 public class Cat {
 
