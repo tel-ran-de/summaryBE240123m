@@ -14,13 +14,13 @@ public class UserMenu {
     public void startUserMenu(){
         while (true) {
             for (int i = 0; i < commands.size(); i++) {
-                System.out.println(i + ". " + commands.get(i).getMenuName());
+                System.out.println((i+1) + ". " + commands.get(i).getMenuName());
             }
             System.out.println("Make your choice: ");
 
             Scanner scanner = new Scanner(System.in);
             int userInput = scanner.nextInt();
-            commands.get(userInput).executeCommand();
+            commands.get(userInput-1).executeCommand();
         }
     }
 }
