@@ -12,6 +12,11 @@ public class Example4 {
         users.add(new User("Elton", "John"));
 
         users.sort(Comparator.comparing(User::getSurname));
+
+        users.sort(Comparator.comparing(user -> user.getSurname()));
+
+
         users.forEach(System.out::println);
+        users.forEach(user -> System.out.println(user));
     }
 }
