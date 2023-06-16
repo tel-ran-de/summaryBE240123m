@@ -1,0 +1,26 @@
+list.forEach((s) -> System.out.println(s));
+
+// - как бы компилятор достроил код программы
+
+
+Компилятор Java преобразует этот код в следующий байт-код:
+
+list.forEach(new Consumer<String>() {
+    @Override
+    public void accept(String s) {
+        System.out.println(s);
+    }
+});
+
+//-------------------------------------
+
+
+list.forEach((s) -> System.out.println(s));
+
+list.forEach(System.out::println);
+
+x -> объект.метод(x), то мы можем заменить на сокращенную форму записи
+объект::метод
+
+
+list.forEach((s) -> System.out.println(s + " новое значение!");
