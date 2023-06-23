@@ -88,7 +88,5 @@ public class StreamExample2 {
 
         System.out.println();
 
-
-
     }
 }
