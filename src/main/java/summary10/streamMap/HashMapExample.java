@@ -1,4 +1,4 @@
-package summary10.stream;
+package summary10.streamMap;
 
 import java.util.HashMap;
 import java.util.Map;
