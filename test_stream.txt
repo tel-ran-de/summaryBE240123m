@@ -1,0 +1,3 @@
+
+hello from java outputstream
+this is example for buffer reader
