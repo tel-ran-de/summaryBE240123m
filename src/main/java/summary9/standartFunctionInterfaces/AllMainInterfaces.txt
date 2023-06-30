@@ -24,7 +24,7 @@ void accept(T t);
 }
 
 Function<T,R>
-public interface Function<T,R>{
+public interfacs Function<T,R>{
  R apply(T t);
  }
 
