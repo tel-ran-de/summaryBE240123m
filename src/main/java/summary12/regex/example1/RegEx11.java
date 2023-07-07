@@ -27,7 +27,7 @@ public class RegEx11 {
 
 
         // -----------
-        String regEx = "(\\+\\(\\d{1,4}\\)\\s|\\+\\d\\s\\(\\d{1,3}\\)\\s)?\\d{3}[-\\s]?\\d{4}";
+        String regEx = "(\\+\\([0-9]{1,4}\\)\\s|\\+[0-9]\\s\\([0-9]{1,3}\\)\\s)?\\d{3}[-\\s]?[0-9]{4}";
         //------------
 
         Pattern pattern = Pattern.compile(regEx);
